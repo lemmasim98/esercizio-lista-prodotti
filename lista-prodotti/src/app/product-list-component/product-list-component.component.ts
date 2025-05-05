@@ -18,12 +18,13 @@ interface Product {
 
 export class ProductListComponentComponent {
   products: Product[];
-
+  active: boolean;
   constructor(){
     this.products = [
       { name: 'nome', price: 7, description: 'contentId' },
       { name: 'nome', price: 7, description: 'contentId' },
     ];
+    this.active = false;
   }
     
 }
