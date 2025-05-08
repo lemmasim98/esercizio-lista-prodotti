@@ -1,7 +1,7 @@
 <p>product-list-component works!</p>
 <ul>
-@for (product of products; track product){
-    <li ng-click="active = !active;">{{product.name}}</li>
-    <app-product-detail-component [active]="true"/>
+@for (product of products; track product; let i = $index){
+    <li (click)="active[i] = !active[i];">{{product.name}} {{i}}</li>
+    <app-product-detail-component [active]="active[i]"/>
 }
 </ul>
