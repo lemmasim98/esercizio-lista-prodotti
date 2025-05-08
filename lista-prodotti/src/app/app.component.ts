@@ -10,4 +10,5 @@ import { ProductListComponentComponent } from './product-list-component/product-
 })
 export class AppComponent {
   title = 'lista-prodotti';
+  hideVar = true;
 }

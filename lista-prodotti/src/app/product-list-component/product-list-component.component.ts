@@ -1,11 +1,6 @@
 import { Component } from '@angular/core';
 import { ProductDetailComponentComponent } from '../product-detail-component/product-detail-component.component';
-
-interface Product {
-  name: string;
-  price: number;
-  description: string;
-  }
+import { Product } from '../product';
 
 @Component({
   selector: 'app-product-list-component',

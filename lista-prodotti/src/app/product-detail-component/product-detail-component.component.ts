@@ -1,10 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Product } from '../product';
 
-interface Product {
-  name: string;
-  price: number;
-  description: string;
-  }
 @Component({
   selector: 'app-product-detail-component',
   imports: [],
